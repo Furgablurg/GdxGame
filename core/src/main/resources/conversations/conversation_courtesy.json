@@ -24,6 +24,30 @@ conversations: {
                 id: 6
                 dialog: See you later traveler!
         }
+        7: {
+                id: 7
+                dialog: Hello
+        }
+        8: {
+                id: 8
+                dialog: The road ahead is full of adventure.
+        }
+        9: {
+                id: 9,
+                dialog: Stay vigilant, the world is unpredictable.
+        }
+        10: {
+                id: 10,
+                dialog: Always good to see a friendly face.
+        }
+        11: {
+                id: 11,
+                dialog: The stars will light your path.
+        }
+        12: {
+                id: 12
+                dialog: May fortune favor your journey.
+        }
 }
         associatedChoices: {
                 1: [

@@ -55,7 +55,13 @@ public class InventorySlotTooltip extends Window {
 
             description.setText(string);
 
-            this.getTitleLabel().setText(item.getItemTypeID().toString());
+            //Sets Name to ItemName instead of ID
+            //Also checks if that item has a name, if not, display ItemID
+            String ItemName = item.getItemName();
+            if(ItemName == null){
+                ItemName = item.getItemTypeID().toString();
+            }
+            this.getTitleLabel().setText(ItemName);
             this.getTitleLabel().setColor(item.getItemRarity().getColor());
         } else {
             description.setText("");

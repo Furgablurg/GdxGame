@@ -1,5 +1,6 @@
 package com.gdx.game.entities;
 
+import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.math.GridPoint2;
 import com.badlogic.gdx.utils.Array;
 import com.badlogic.gdx.utils.ObjectMap;
@@ -11,6 +12,7 @@ public class EntityConfig {
     private Entity.State state = Entity.State.IDLE;
     private Entity.Direction direction = Entity.Direction.DOWN;
     private String entityID;
+    private String entityName; // added entityName variable
     private String entityStatus;
     private String conversationConfigPath;
     private String classTreePath;
@@ -46,7 +48,8 @@ public class EntityConfig {
         state = config.getState();
         direction = config.getDirection();
         entityID = config.getEntityID();
-        entityStatus = config.getEntityStatus();
+        entityName = config.getEntityName(); // added entityName from config
+        entityStatus = config.getEntityStatus(); 
         conversationConfigPath = config.getConversationConfigPath();
         classTreePath = config.getClassTreePath();
         resumeConfigPath = config.getResumeConfigPath();
@@ -139,8 +142,16 @@ public class EntityConfig {
         return entityID;
     }
 
+    public String getEntityName() { // added EntityName getter
+        return entityName;
+    }
+
     public void setEntityID(String entityID) {
         this.entityID = entityID;
+    }
+
+    public void setEntityName(String entityName) { // added EntityName setter
+        this.entityName = entityName;
     }
 
     public String getEntityStatus() {
@@ -246,7 +257,7 @@ public class EntityConfig {
         public String getItemTypeID() {
             return itemTypeID;
         }
-
+ 
         public void setItemTypeID(String itemTypeID) {
             this.itemTypeID = itemTypeID;
         }

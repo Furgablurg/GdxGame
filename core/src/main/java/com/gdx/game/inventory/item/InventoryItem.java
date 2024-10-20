@@ -95,14 +95,16 @@ public class InventoryItem extends Image {
     private int itemUseType;
     private int itemUseTypeValue;
     private ItemTypeID itemTypeID;
+    private String itemName;
     private ItemRarity itemRarity;
     private ItemSetID itemSetID;
     private String itemShortDescription;
     private int itemValue;
 
-    public InventoryItem(TextureRegion textureRegion, int itemAttributes, ItemTypeID itemTypeID, int itemUseType, int itemUseTypeValue, int itemValue) {
+    public InventoryItem(TextureRegion textureRegion, int itemAttributes, ItemTypeID itemTypeID, String itemName, int itemUseType, int itemUseTypeValue, int itemValue) {
         super(textureRegion);
 
+        this.itemName = itemName;
         this.itemTypeID = itemTypeID;
         this.itemAttributes = itemAttributes;
         this.itemUseType = itemUseType;
@@ -117,6 +119,7 @@ public class InventoryItem extends Image {
     public InventoryItem(InventoryItem inventoryItem) {
         super();
         this.itemTypeID = inventoryItem.getItemTypeID();
+        this.itemName = inventoryItem.getItemName();
         this.itemAttributes = inventoryItem.getItemAttributes();
         this.itemUseType = inventoryItem.getItemUseType();
         this.itemUseTypeValue = inventoryItem.getItemUseTypeValue();
@@ -148,6 +151,14 @@ public class InventoryItem extends Image {
 
     public void setItemTypeID(ItemTypeID itemTypeID) {
         this.itemTypeID = itemTypeID;
+    }
+
+    public String getItemName() { //Itemname getter
+        return itemName;
+    }
+
+    public void setItemName(String itemName) { //Itemname setter
+        this.itemName = itemName;
     }
 
     public int getItemAttributes() {

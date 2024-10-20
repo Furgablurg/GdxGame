@@ -29,6 +29,7 @@ public class ConversationUI extends Window {
     private List listItems;
     private ConversationGraph graph;
     private String currentEntityID;
+    private String currentEntityName; // added currentEntityName variable
 
     private TextButton closeButton;
 
@@ -98,6 +99,10 @@ public class ConversationUI extends Window {
         return currentEntityID;
     }
 
+    public String getCurrentEntityName() { // added currentEntityName getter
+        return currentEntityName;
+    }
+
     public void loadConversation(EntityConfig entityConfig) {
         String fullFilenamePath = entityConfig.getConversationConfigPath();
 		this.getTitleLabel().setText("");
@@ -113,8 +118,16 @@ public class ConversationUI extends Window {
             fullFilenamePath = COURTESY_PHRASES_PATH;
         }
 
+        //shows entityName instead of entityID
         currentEntityID = entityConfig.getEntityID();
-        this.getTitleLabel().setText(entityConfig.getEntityID());
+        currentEntityName = entityConfig.getEntityName();
+
+        //if entityName is null
+        //show ID instead
+        if(currentEntityName == null){
+            currentEntityName = currentEntityID;
+        }
+        this.getTitleLabel().setText(currentEntityName);
 
         ConversationGraph graph = json.fromJson(ConversationGraph.class, Gdx.files.internal(fullFilenamePath));
 

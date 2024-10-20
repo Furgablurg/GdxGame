@@ -404,7 +404,7 @@ public class InventoryUI extends Window implements InventorySubject, InventorySl
         return items;
     }
 
-
+    //OMG????
     public static void setInventoryItemNames(Table targetTable, String name) {
         Array<Cell> cells = targetTable.getCells();
         for(int i = 0; i < cells.size; i++) {

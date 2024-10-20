@@ -1,6 +1,7 @@
 [
 	{
 		entityID : TOWN_FOLK1
+		entityName : DANIEL
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -52,6 +53,7 @@
 	},
 	{
 		entityID : TOWN_FOLK2
+		entityName : HUGO
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -102,6 +104,7 @@
 	},
 	{
 		entityID : TOWN_FOLK3
+		entityName : ERIK
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -152,6 +155,7 @@
 	},
 	{
 		entityID : TOWN_FOLK4
+		entityName : EDVIN
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -202,6 +206,7 @@
 	},
 	{
 		entityID : TOWN_FOLK5
+		entityName : JESPER
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -252,6 +257,7 @@
 	},
 	{
 		entityID : TOWN_FOLK6
+		entityName : MATTHIAS
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -302,6 +308,7 @@
 	},
 	{
 		entityID : TOWN_FOLK7
+		entityName : STEFAN
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -352,6 +359,7 @@
 	},
 	{
 		entityID : TOWN_FOLK8
+		entityName : JOHANNES
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -402,6 +410,7 @@
 	},
 	{
 		entityID : TOWN_FOLK9
+		entityName : NAME
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -452,6 +461,7 @@
 	},
 	{
 		entityID : TOWN_FOLK10
+		entityName : Name1
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -502,6 +512,7 @@
 	},
 	{
 		entityID : TOWN_FOLK11
+		entityName : NAME2
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -552,6 +563,7 @@
 	},
 	{
 		entityID : TOWN_FOLK12
+		entityName : NAME3
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -602,6 +614,7 @@
 	},
 	{
 		entityID : TOWN_FOLK13
+		entityName : NAME4
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -652,6 +665,7 @@
 	},
 	{
 		entityID : TOWN_FOLK14
+		entityName : NAME5
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN
@@ -702,6 +716,7 @@
 	},
 	{
 		entityID : TOWN_FOLK15
+		entityName : NAME6
 		entityStatus : VILLAGER
 		state : IMMOBILE
 		direction : DOWN

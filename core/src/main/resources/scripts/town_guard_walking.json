@@ -1,5 +1,6 @@
 {
 	entityID : TOWN_GUARD
+	entityName : EREN
 	entityStatus : GUARD
 	state : IDLE
 	direction : DOWN

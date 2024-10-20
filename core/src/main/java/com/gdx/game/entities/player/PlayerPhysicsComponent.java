@@ -152,7 +152,8 @@ public class PlayerPhysicsComponent extends PhysicsComponent {
                 if (distance <= SELECT_RAY_MAXIMUM_DISTANCE) {
                     //We have a valid entity selection
                     //Picked/Selected
-                    LOGGER.debug("Selected Entity! {}", mapEntity.getEntityConfig().getEntityID());
+                    //added entityNAME DEBUGGER
+                    LOGGER.debug("Selected Entity! ID: {} NAME: {}", mapEntity.getEntityConfig().getEntityID(), mapEntity.getEntityConfig().getEntityName());
                     mapEntity.sendMessage(Component.MESSAGE.ENTITY_SELECTED);
                     notify(json.toJson(mapEntity.getEntityConfig()), ComponentObserver.ComponentEvent.LOAD_CONVERSATION);
                 }
